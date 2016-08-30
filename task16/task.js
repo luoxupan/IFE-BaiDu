@@ -27,7 +27,7 @@ function renderAqiList() {
 	var table = document.getElementById("aqi-table");
 
 	for (var key in aqiData) {
-		items += "<tr><td>" + key + "</td><td>" + aqiData[key] + "</td><td><button>删除</button></td></tr>";
+		items += "<tr ><td>" + key + "</td><td>" + aqiData[key] + "</td><td><button class='btn'>删除</button></td></tr>";
 	}
 	console.log(key);
 	table.innerHTML = items;
@@ -46,8 +46,12 @@ function addBtnHandle() {
  * 点击各个删除按钮的时候的处理逻辑
  * 获取哪个城市数据被删，删除数据，更新表格显示
  */
-function delBtnHandle() {
+function delBtnHandle(target) {
 	// do sth.
+	var elem = target.parentNode.parentNode;
+	var key = elem.children[0].innerHTML;
+	console.log(key);
+	delete aqiData[key];
 	renderAqiList();
 }
 
@@ -57,8 +61,12 @@ function init() {
 	document.getElementById("add-btn").addEventListener("click", addBtnHandle, false);
 
 	// 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
-	// document.getElementById("").onclick = delBtnHandle;
-
+	document.getElementById("aqi-table").addEventListener("click", function(e) {
+		if (e.target && e.target.nodeName === "BUTTON") {
+			// console.log(e.target);
+			delBtnHandle(e.target);
+		}
+	});
 }
 
 init();
