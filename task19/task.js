@@ -7,26 +7,38 @@ function render() {
 	for (var i in data) {
 		var html = document.createElement("div");
 		html.setAttribute("class", "msg");
-		html.setAttribute("id", "msg");
-		html.innerHTML = data[i];
+		data[i] += 10;
+		html.style.height = data[i] + "px";
+		// html.setAttribute("height", data[i]);
+		// html.innerHTML = data[i];
 		show.appendChild(html);
 	}
-	bindDiv();
 }
 
-//为每个div绑定事件
-function bindDiv() {
-	var show = document.getElementById("show");
-	for (var i = 0; i < show.childNodes.length; ++i) {
-		(function(n) {
-			show.childNodes[n].addEventListener("click", function(e) {
-				data.splice(n, 1);//删除元素从第n个开始，删除一个元素
-				// console.log(e.target);
+
+
+function bubbleSort() {
+	var len = data.length;
+	var bool = true;
+	while (bool) {
+		bool = false;
+		for (var i = 1; i < len; ++i) {
+			if (data[i-1] > data[i]) {
+				var val = data[i];
+				data[i] = data[i-1];
+				data[i-1] = val;
+				bool = true;
 				render();
-			});
-		})(i);
+			}
+		}
 	}
 }
+
+
+function verifyVal(val) {
+
+}
+
 
 //为按钮绑定事件
 function bindButton() {
@@ -39,13 +51,13 @@ function bindButton() {
 		switch (e.target.value) {
 			case "leftIn":
 				if (val) {
-					data.unshift(val);
+					data.unshift(parseInt(val));
 					render();
 				}
 			break;
 			case "rightIn":
 				if (val) {
-					data.push(val);
+					data.push(parseInt(val));
 					render();
 				}
 			break;
@@ -58,6 +70,12 @@ function bindButton() {
 				render();
 			break;
 		}
+	});
+
+	var sort = document.getElementById("bubbleSort");
+	sort.addEventListener("click", function(e) {
+		bubbleSort();
+		// render();
 	});
 }
 
