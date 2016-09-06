@@ -1,0 +1,39 @@
+.submit {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+span {
+	margin-right: 20px;
+}
+label {
+	font-size: 20px;
+	font-family: "微软雅黑";
+	padding-right: 20px;
+	line-height: 20px;
+	color: #323232;
+}
+
+.text {
+	height: 40px;
+	width: 300px;
+	border: 2px solid #CCCCCC;
+	border-radius: 0.5em;
+	padding-left: 10px;
+}
+
+.button {
+	margin-left: 20px;
+	background: #2779BF;
+	padding: 13px 13px;
+	border: 1px solid #2779BF;
+	border-radius: 0.5em;
+	cursor: pointer;
+}
+
+.p {
+	font-size: 15px;
+	margin-left: 66px;
+	color: #ABABAB;
+}

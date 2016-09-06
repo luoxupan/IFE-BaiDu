@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.contant {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.row {
+	margin-bottom: 30px;
+	margin-left: 50px;
+}
+
+.row input {
+	width: 250px;
+	border: 2px solid #C1C1C1;
+	border-radius: 5px;
+}
+.row .mm {
+	margin-left: -40px;
+}
+
+button {
+	font-size: 15px;
+	padding: 6px 10px;
+	border-radius: 5px;
+	border: 2px solid #C1C1C1;
+	cursor: pointer;
+	margin-left: 247px;
+}
+
+p {
+	font-size: 14px;
+	color: #C1C1C1;
+	margin-left: 46px;
+	padding-top: 5px;
+}
