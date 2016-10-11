@@ -45,9 +45,8 @@ window.onload = function() {
 				clearInterval(timer);
 				divList[divList.length-1].style.backgroundColor = '#fff';
 			}
-		},500)
+		}, 500)
 	}
-
 };
 
 
