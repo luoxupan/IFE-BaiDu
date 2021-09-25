@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				background: #fff;
+			}
+			.root {
+				border: 1px solid #000;
+				padding: 20px;
+				width: 1000px;
+				height: 300px;
+				display: flex;
+				margin: 100px auto;
+				justify-content: space-between;
+				flex-direction: row;
+			}
+			.child-1 {
+				border: 1px solid red;
+				padding: 20px;
+				width: 450px;
+				height: 260px;
+				display: flex;
+				justify-content: space-between;
+				flex-direction: row;
+				/*background-color: red;*/
+			}
+			.child-2 {
+				display: flex;
+				border: 1px solid green;
+				padding: 20px;
+				width: 170px;
+    			height: 220px;
+    			justify-content: space-between;
+			}
+			.child-3 {
+				display: flex;
+				border: 1px solid blue;
+				padding: 20px;
+				width: 35px;
+    			height: 180px;
+			}
+			.button {
+				width: 200px;
+				height: 100px;
+				margin: 100px auto;
+			}
+			.btn-01 {
+				padding: 5px;
+				cursor: pointer;
+				border: 1px solid #D6D6D6;
+				border-radius: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root" class="root">
+			<div class="child-1">
+				<div class="child-2">
+					<div class="child-3">
+						
+					</div>
+					<div class="child-3">
+						
+					</div>
+				</div>
+				<div class="child-2">
+					<div class="child-3">
+						
+					</div>
+					<div class="child-3">
+						
+					</div>
+				</div>
+			</div>
+			<div class="child-1">
+				<div class="child-2">
+					<div class="child-3">
+						
+					</div>
+					<div class="child-3">
+						
+					</div>
+				</div>
+				<div class="child-2">
+					<div class="child-3">
+						
+					</div>
+					<div class="child-3">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="button">
+			<button class="btn-01" id="btn-01">前序遍历</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="./task.js"></script>
+</html>
+
+

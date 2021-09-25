@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		ul li {
+			list-style: none;
+		}
+	</style>
+</head>
+<body>
+	<h3>污染城市列表</h3>
+	<ul id="aqi-list">
+		<!-- <li>第一名：福州（样例），10</li>
+		<li>第二名：福州（样例），10</li> -->
+	</ul>
+
+
+	<script type="text/javascript">
+		var aqiData = [
+			["北京", 90],
+			["上海", 50],
+			["福州", 10],
+			["广州", 50],
+			["成都", 90],
+			["西安", 100]
+		];
+
+		(function() {
+			
+			//===========繁琐版===========
+			// var ul = document.getElementById("aqi-list");
+			// var array = new Array();
+			// var arr = ["一","二","三","四","五"];
+			// for (var i = 0, len = aqiData.length; i < len; ++i) {
+			// 	if (aqiData[i][1] > 60) {
+			// 		array.push(aqiData[i]);
+			// 	}
+			// }
+			// if (array.length > 0) {
+			// 	array.sort(function(x, y) {
+			// 		return y[1] - x[1];
+			// 	});
+			// 	var level = 0;
+			// 	for (var i = 0, len = array.length; i < len; ++i) {
+			// 		var li = document.createElement("li");
+			// 		li.innerHTML = "第" + arr[level] + "名" +array[i][0] +" , " + array[i][1];
+			// 		ul.appendChild(li);
+			// 		if (array[i][1] != array[i+1][1]) {
+			// 			level++;
+			// 		}
+			// 	}
+			// }
+
+			//===========简洁版===========
+			var arr = ["一","二","三","四","五"];
+			aqiData.sort(function(x, y) {
+				return y[1] - x[1];
+			});
+			var ul = document.getElementById("aqi-list");
+			var level = 0;
+			for (var i = 0, len = aqiData.length; i < len; ++i) {
+				if (aqiData[i][1] > 60) {
+					var li = document.createElement("li");
+					li.innerHTML = "第" + arr[level] + "名" +aqiData[i][0] +": " + aqiData[i][1];
+					ul.appendChild(li);
+					if (aqiData[i][1] != aqiData[i+1][1]) {
+						level++;
+					}
+				}
+			}
+		})();
+
+	</script>
+</body>
+</html>

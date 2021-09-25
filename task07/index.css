@@ -1,0 +1,260 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 57px;
+	background: #ffffff;
+}
+header .banner_left {
+	background: url("images/icon-1.png") no-repeat left;
+	background-size: 35px 29px;
+	float: left;
+	margin-left: 55px;
+	line-height: 52px;
+}
+header .banner_left h1 {
+	font-size: 24px;
+	padding-left: 50px;
+}
+header nav {
+	float: right;
+	line-height: 52px;
+	padding-right: 55px;
+}
+header nav a {
+	text-decoration: none;
+	padding-left: 30px;
+	font-size: 14px;
+	text-align: center;
+	color: #534141;
+	font-family: "微软雅黑";
+}
+header nav .icon {
+	display: inline-block;
+	background: url("images/icon-2.jpg") no-repeat left;
+	margin-left: 25px;
+	padding-left: 21px;
+}
+header nav a:hover {
+	color: #F44336;
+}
+/*========================== part_1 =============================*/
+.part_1 {
+	background: url("images/pic01.jpg");
+	height: 650px;
+	background-size: 100% auto;
+}
+.part_1 .mes {
+	width: 500px;
+	height: 300px;
+	/*background: skyblue;*/
+	padding-top: 130px;
+	padding-left: 120px;
+}
+.part_1 .mes p {
+	font-size: 22px;
+	color: #fff;
+}
+.part_1 .mes p:first-child {
+	font-family: Arial;
+	font-size: 60px;
+	color: #fff;
+}
+
+.part_1 .mes span {
+	display: inline-block;
+	width: 330px;
+	height: 63px;
+	background: #E8504F;
+	text-align: center;
+	line-height: 62px;
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 80px;
+}
+.part_1 .mes span:hover {
+	background: red;
+}
+/*========================== part_2 =============================*/
+.part_2 {
+	height: 250px;
+	background: #fff;
+}
+.part_2 .channel-column {
+	width: 238px;
+    float: left;
+    height: 250px;
+    margin-right: 10px;
+    background: #fff;
+}
+.part_2 .channel-column .img-con {
+	width: 50px;
+	height: 50px;
+	margin: 50px auto 0;
+}
+.part_2 .channel-column .column-mgs {
+	width: 150px;
+	margin: 50px auto 0;
+	font-size: 13px;
+	color: #534141;
+	text-align: center;
+	border-right: 2px solid #534141;
+	padding-right: 42px;
+}
+/*========================== part_3 =============================*/
+.part_3 {
+	background: #EDEAEA;
+	height: 400px;
+}
+.part_3 .p3-img {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.part_3 .p3-msg {
+	text-align: center;
+	font-size: 50px;
+	color: #A0A0A0;
+}
+/*========================== part_4 =============================*/
+.part_4 {
+	height: 300px;
+	background: url("images/pic02.jpg");
+}
+.part_4 .p4-msg {
+	height: 100px;
+	text-align: center;
+	padding-top: 90px;
+	color: #fff;
+	font-family: "微软雅黑";
+	line-height: 20px;
+}
+.part_4 .p4-msg p:first-child {
+	font-size: 22px;
+}
+.part_4 .p4-msg p:last-child {
+	font-size: 13px;
+}
+.part_4 .p4-msg span {
+	display: inline-block;
+	width: 34px;
+	height: 11px;
+	color: #fff;
+	border-top: 2px solid #fff;
+	margin-top: 15px;
+	transition:all 0.5s ease-out 0s; 
+}
+.part_4 .p4-msg span:hover {
+	width: 200px;
+}
+.part_4 .option {
+	height: 36px;
+	text-align: center;
+}
+.part_4 .option .style {
+	height: 25px;
+	width: 235px;
+}
+.part_4 .option .icon {
+	background: url("images/icon-7.png") no-repeat right;
+	background-size: 22px 22px;
+	background-color: #fff;
+}
+.part_4 .option .submit {
+	height: 30px;
+	background-color: #be4e48;
+	color: #fff;
+	border: 1px solid #be4e48;
+}
+/*========================== part_5 =============================*/
+.part_5 {
+	height: 500px;
+	background-color: #EDEAEA;
+	text-align: center;
+	padding-top: 80px;
+}
+.part_5 .pic {
+	height: 400px;
+	display: inline-block;
+	width: 240px;
+}
+.part_5 .pic .p1 {
+	font-size: 12px;
+    color: #B3AFAC;
+    line-height: 63px;
+}
+
+/*========================== part_6 =============================*/
+.part_6 {
+	height: 560px;
+	background: url("images/pic07.jpg") no-repeat left;
+}
+.part_6 .p6-msg {
+	width: 400px;
+	text-align: center;
+	position: relative;
+	top: 124px;
+	left: 220px;
+	color: #fff;
+	font-family: 'Microsoft YaHei';
+} 
+
+.part_6 .p6-msg p:first-child {
+	font-size: 50px;
+}
+.part_6 .p6-msg p:nth-child(2) {
+	    font-size: 150px;
+}
+.part_6 .p6-msg p:nth-child(3) {
+	font-size: 30px;
+}
+.part_6 .p6-msg p:nth-child(4) {
+	font-size: 30px;
+}
+/*========================== part_7 =============================*/
+.part_7 {
+	/*height: 632px;*/
+	padding: 100px 50px 100px 135px;
+	/*background: skyblue;*/
+}
+.part_7 .p7-left {
+	float: left;
+
+}
+.part_7 .p7-left .msg {
+	width: 332px;
+	font-size: 14px;
+    color: #B3AFAC;
+    text-align: left;
+    font-family: 'Microsoft YaHei';
+    margin-bottom: 35px;
+}
+.part_7 .p7-left .m1 {
+	font-size: 16px;
+    color: #6C5C5C;
+    line-height: 60px;
+}
+.part_7 .p7-left p {
+	line-height: 20px;
+}
+.part_7 .p7-left span {
+	/*display: inline-block;*/
+	float: right;
+	cursor: pointer;
+}
+.part_7 .p7-right {
+	float: right;
+}
+
+
+
+
+
+
+
+
+

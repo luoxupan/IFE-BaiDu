@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<style type="text/css">
+			.aqi-chart-wrap {
+				position: relative;
+				height: 600px;
+			}
+
+		</style>
+	</head>	
+	<body>
+		<fieldset id="form-gra-time">
+			<legend>请选择日期粒度：</legend>
+			<label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+			<label>周<input name="gra-time" value="week" type="radio"></label>
+			<label>月<input name="gra-time" value="month" type="radio"></label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>请选择查看的城市：</legend>
+			<select id="city-select">
+				<!-- <option>北京</option>
+				<option>天津</option>
+				<option>上海</option> -->
+			</select>
+		</fieldset>
+	
+		<div class="aqi-chart-wrap" id="aqi-chart-wrap">
+			
+		</div>
+
+		<script type="text/javascript">
+
+		// var select = document.getElementById("city-select");
+		// // console.log(select);
+		// select.addEventListener("change", function(e) {
+		// 	console.log(e.target.value);
+		// });
+
+			// var select = document.getElementById("form-gra-time");
+			// select.addEventListener("change", function(e) {
+			// 	console.log(e.target.value);
+			// });
+
+			// var aqiSourceData = {
+			// 	"北京": (500),
+			// 	"上海": (300),
+			// 	"广州": (200),
+			// 	"深圳": (100),
+			// 	"成都": (300),
+			// 	"西安": (500),
+			// 	"福州": (100),
+			// 	"厦门": (100),
+			// 	"沈阳": (500)
+			// };
+			// var select = document.getElementById("city-select");
+			// var str = "";
+			// for (var k in aqiSourceData) {
+			// 	console.log(k);
+			// 	str += "<option>"+k+"</option>";
+			// }
+			// select.innerHTML = str;
+			// for (var k in aqiSourceData) {
+			// 	console.log(k + " " + aqiSourceData[k]);
+			// }
+		</script>
+	</body>
+	<script type="text/javascript" src="task.js"></script>
+</html>
